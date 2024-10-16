@@ -1,69 +1,37 @@
+Event Booking System
 Overview
-The Event Booking System is a React application that allows users to browse and book tickets for various events. Users can view event details, filter events by category, and search for specific events by title. The app ensures a smooth user experience through responsive design and effective state management.
-
+React application for browsing and booking events.
+Displays event details and enables ticket booking.
 Features
-Event Listing: Displays a list of events with details such as:
-
-Title
-Description
-Category
-Date
-Available Seats
-Price
-Search and Filter: Users can filter events by category and search for specific events by title.
-
-Event Details: Clicking on an event provides more detailed information on a separate page.
-
-Booking Tickets: Users can book tickets for events if seats are available.
-
-Pagination: The events list is paginated for better navigation.
-
+Event Listing: Title, description, category, date, available seats, and price.
+Search & Filter: Filter events by category; search by title.
+Event Details: Click to view more details on a separate page.
+Booking Tickets: Users can book tickets if seats are available.
+Pagination: Paginated event listings for easier navigation.
 Authentication: Users must log in to book tickets.
-
 Technologies Used
-React: For building the user interface.
-React Hooks: For state management (e.g., useState, useEffect).
-CSS: For styling the application (consider using Tailwind CSS for utility-first styling).
-Context API: For handling user authentication sessions.
-Mock API / Static JSON: To simulate data fetching.
+React: Frontend framework.
+React Hooks: For state management (useState, useEffect).
+CSS: For styling (consider Tailwind CSS).
+Context API: For user authentication sessions.
+Mock API / Static JSON: Simulated data fetching.
 Getting Started
-Prerequisites
-Ensure you have Node.js installed on your machine.
-Installation
-Clone the repository:
-
-bash
-Copy code
-git clone https://github.com/yourusername/event-booking-system.git
-Navigate to the project directory:
-
-bash
-Copy code
-cd event-booking-system
-Install the dependencies:
-
-bash
-Copy code
-npm install
-Start the development server:
-
-bash
-Copy code
-npm start
-Open your browser and go to http://localhost:3000 to see the app in action.
-
+Clone the Repo: git clone https://github.com/yourusername/event-booking-system.git
+Navigate: cd event-booking-system
+Install Dependencies: npm install
+Start Server: npm start
+Open in Browser: Visit http://localhost:3000.
 State Management
-The application uses React hooks for managing state at the component level. While the current implementation is sufficient for the existing features, the architecture is designed to be scalable for future integration of a global state management solution, such as Redux.
-
+Uses React hooks for component-level state.
+Designed for potential future Redux integration.
 Data Fetching
-The app simulates data fetching using a mock API or static JSON data. Key points include:
-
-A loading state is displayed while fetching data.
-User-friendly error handling is implemented to notify users of any data fetching failures.
+Simulates fetching with a mock API/static JSON.
+Shows loading state during data fetching.
+Provides user-friendly error handling.
 Event Booking Logic
-When a user clicks the "Book Ticket" button, the number of available seats for that event is reduced by 1.
-If no seats are available, a message is displayed indicating that the event is fully booked.
+Decreases available seats when "Book Ticket" is clicked.
+Displays a message if the event is fully booked.
 Additional Features
-Pagination: Implemented using the useMemo hook for efficient rendering of the events list.
-Authentication: A simple mock authentication system is included, utilizing a static users list and Context API for session handling.
-Responsive Design: The application is designed to be responsive across different screen sizes, ensuring a seamless experience on both desktop and mobile devices.
+Pagination: Efficiently renders events using useMemo.
+Authentication: Simple mock system with Context API.
+Responsive Design: Optimized for various screen sizes.
