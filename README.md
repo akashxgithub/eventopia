@@ -1,6 +1,5 @@
 Event Booking System
 Overview
-
 React application for browsing and booking events.
 Displays event details and enables ticket booking.
 Features
@@ -15,7 +14,7 @@ React: Frontend framework.
 React Hooks: For state management (useState, useEffect).
 CSS: For styling (consider Tailwind CSS).
 Context API: For user authentication sessions.
-Mock API / Static JSON: Simulated data fetching.
+Static JSON: Simulated data fetching.
 Getting Started
 Clone the Repo: git clone https://github.com/yourusername/event-booking-system.git
 Navigate: cd event-booking-system
