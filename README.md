@@ -1,5 +1,5 @@
 Event Booking System
-Overview
+ - Overview
 React application for browsing and booking events.
 Displays event details and enables ticket booking.
 Features
